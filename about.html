@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>공덕 노래방 이벤트 | 정보 - 가라면 제대로 알아야지</title>
+    <meta name="description" content="공덕 노래방 이벤트, 여기 오면 알게 된다. 운영 시간, 시스템, 위치까지. 하드코어하게 즐기고 싶으면 이 정도는 알고 와라. 예약: 010-6279-0862">
+    <meta name="keywords" content="공덕 노래방, 공덕 노래방 이벤트, 노래방 정보, 공덕 이벤트, 노래방 시스템, 브루탈 노래방">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b08-gd-kb-evt.vercel.app/info">
+    <meta property="og:title" content="공덕 노래방 이벤트 | 정보 - 가라면 제대로 알아야지">
+    <meta property="og:description" content="공덕 노래방 이벤트, 여기 오면 알게 된다. 운영 시간, 시스템, 위치까지. 하드코어하게 즐기고 싶으면 이 정도는 알고 와라. 예약: 010-6279-0862">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'Courier New', 'Nanum Gothic', monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        a { color: #ff4444; text-decoration: underline wavy #ff4444; transition: all 0.2s; }
+        a:hover { color: #ffffff; background: #ff4444; text-decoration: none; }
+        img { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; padding-left: 0; }
+        /* BRUTALIST BASE */
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.5px; }
+        h1 { font-size: 3rem; line-height: 1; color: #ff4444; border-bottom: 6px double #ff4444; display: inline-block; margin-bottom: 1.5rem; }
+        h2 { font-size: 2.2rem; margin: 2rem 0 1rem; color: #ff6666; border-left: 8px solid #ff4444; padding-left: 1rem; }
+        h3 { font-size: 1.5rem; margin: 1.5rem 0 0.8rem; color: #ff8888; }
+        p { margin-bottom: 1.2rem; font-size: 1.1rem; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+        .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
+        /* HEADER / NAV */
+        header { background: #111; border-bottom: 4px solid #ff4444; position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+        .logo { font-size: 1.8rem; font-weight: 900; color: #ff4444; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
+        .logo:hover { background: transparent; color: #fff; }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { color: #ccc; text-decoration: none; font-weight: bold; font-size: 1rem; text-transform: uppercase; padding: 0.3rem 0; border-bottom: 2px solid transparent; }
+        nav a:hover { color: #ff4444; background: transparent; border-bottom-color: #ff4444; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; padding: 5px; }
+        .hamburger span { width: 28px; height: 3px; background: #ff4444; margin: 4px 0; transition: 0.3s; }
+        .tel-link { display: inline-block; background: #ff4444; color: #000 !important; padding: 0.5rem 1.2rem; font-weight: 900; text-decoration: none; border: 2px solid #ff4444; }
+        .tel-link:hover { background: #000; color: #ff4444 !important; border-color: #ff4444; }
+        /* MAIN */
+        main { padding: 3rem 0; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
+        .info-card { background: #222; border: 3px solid #333; padding: 1.8rem; position: relative; overflow: hidden; }
+        .info-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: #ff4444; }
+        .info-card h3 { margin-top: 0; }
+        .info-card p { font-size: 1rem; }
+        .info-card .big-number { font-size: 3rem; font-weight: 900; color: #ff4444; line-height: 1; }
+        .faq-list { margin-top: 3rem; }
+        .faq-item { border-bottom: 2px dashed #444; padding: 1.2rem 0; }
+        .faq-item h4 { font-size: 1.2rem; cursor: pointer; color: #ff8888; margin-bottom: 0.5rem; }
+        .faq-item p { margin-bottom: 0; }
+        .callout { background: #111; border: 4px solid #ff4444; padding: 2rem; text-align: center; margin: 3rem 0; }
+        .callout a { font-size: 1.5rem; display: inline-block; margin-top: 1rem; }
+        /* FOOTER */
+        footer { background: #111; border-top: 4px solid #ff4444; padding: 2rem 0; text-align: center; }
+        footer p { margin: 0; font-size: 0.9rem; color: #888; }
+        /* RESPONSIVE 768 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .info-grid { grid-template-columns: 1fr; }
+            nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #111; padding: 1rem; border-bottom: 4px solid #ff4444; }
+            nav.active { display: flex; }
+            nav a { padding: 0.8rem 0; border-bottom: 1px solid #333; }
+            .hamburger { display: flex; }
+            .header-inner { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/" class="logo">GONGDUK KB</a>
+            <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </div>
+            <nav>
+                <a href="/">HOME</a>
+                <a href="/info">INFO</a>
+                <a href="/event">EVENT</a>
+                <a href="tel:010-6279-0862" class="tel-link">CALL NOW</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>INFO</h1>
+            <p>가기 전에 알아야 할 것들. 여기는 일반 노래방이 아니다. 하드코어하게 즐기고 싶으면 이 정도는 알고 와라.</p>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="big-number">24/7</div>
+                    <h3>운영 시간</h3>
+                    <p>문은 항상 열려 있다. 새벽 3시? 아침 7시? 오후 2시? 상관없다. 우리는 닫지 않는다. 진짜로 즐기고 싶은 새벽까지, 혹은 해뜰 때까지.</p>
+                    <p><strong>예외:</strong> 정기 점검일 (매월 첫째 주 월요일 오전 6시~12시) — 이 시간 빼고는 다 된다.</p>
+                </div>
+                <div class="info-card">
+                    <div class="big-number">₩15,000</div>
+                    <h3>가격 시스템</h3>
+                    <p>기본 1시간 15,000원. 2시간이면 25,000원. 밤샘(6시간) 50,000원. 음료는 무제한 리필. 안주는 따로.</p>
+                    <p>이벤트 기간에는 2시간 20,000원. 진짜 하드코어하게 부르고 싶으면 밤샘 패키지 추천. 방음 완벽, 소리 질러도 된다.</p>
+                </div>
+                <div class="info-card">
+                    <div class="big-number">공덕</div>
+                    <h3>위치 & 접근성</h3>
+                    <p>공덕역 4번 출구에서 도보 3분. 골목 안쪽 2층 건물. 간판은 크게 'GONGDUK KB'라고 써 있다. 못 찾으면 전화해라.</p>
+                    <p>주차: 건물 뒤편 공영주차장 이용 (2시간 무료). 자전거는 건물 앞 거치대 가능.</p>
+                </div>
+                <div class="info-card">
+                    <div class="big-number">100%</div>
+                    <h3>사운드 시스템</h3>
+                    <p>JBL 전문 스피커 + 다이나믹 마이크. 보컬 튜닝 가능. 너의 목소리를 그대로, 혹은 찢어지게. 선택은 너의 몫.</p>
+                    <p>룸별로 EQ 조절 가능. 하드코어 록? 발라드? 힙합? 다 된다. 단, 음량 제한은 없다. 귀가 아프면 줄여라.</p>
+                </div>
+            </div>
+
+            <h2>FAQ — 자주 묻는 것들</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>예약 필수야?</h4>
+                    <p>필수는 아니다. 하지만 주말이나 이벤트 기간에는 미리 예약하는 게 정신 건강에 좋다. 전화 한 통이면 끝. 010-6279-0862.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>노래 못 부르는데 와도 돼?</h4>
+                    <p>여기는 노래 잘 부르는 사람만 오라는 곳이 아니다. 니가 즐기면 그게 끝이다. 못 부른다고? 여기서는 그게 매력이다. 와서 질러라.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>혼자 와도 돼?</h4>
+                    <p>혼자? 더 좋다. 방 하나 잡고 니 노래만 불러라. 아무도 신경 안 쓴다. 오히려 더 자유롭게 즐길 수 있다.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>이벤트는 언제 해?</h4>
+                    <p>매주 금요일 저녁 8시부터 새벽 2시까지. 이벤트 기간에는 가격 할인 + 특별 시스템. 자세한 건 EVENT 페이지에서 확인해라.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>방음은 진짜 되나?</h4>
+                    <p>이중 방음 + 흡음재. 옆방에서 무슨 노래를 부르든 안 들린다. 니가 아무리 질러도 밖에는 새어나가지 않는다. 마음껏 질러라.</p>
+                </div>
+            </div>
+
+            <div class="callout">
+                <h2>이 정도면 알겠지?</h2>
+                <p>더 궁금한 게 있으면 직접 전화해라. 설명보다 경험이 더 중요하다. 지금 바로 예약해라.</p>
+                <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 GONGDUK KB — 공덕 노래방 이벤트. 하드코어하게 즐기는 방법은 여기뿐이다.</p>
+        </div>
+    </footer>
+
+    <script>
+        // hamburger menu toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
