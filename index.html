@@ -25,31 +25,37 @@
     <meta name="twitter:description" content="공덕 노래방 이벤트 정보를 한눈에. 엄선된 프리미엄 가라오케 공간에서 특별한 시간을 경험하세요.">
 
     <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  "name": "공덕 노래방 이벤트",
+  "description": "공덕 지역 프리미엄 노래방 이벤트 및 가라오케 정보 플랫폼",
+  "url": "https://gongdeok-song-room.namanavi.com/",
+  "telephone": "010-6279-0862",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "공덕",
+    "addressCountry": "KR"
+  },
+  "priceRange": "₩₩",
+  "openingHoursSpecification": [
     {
-        "@context": "https://schema.org",
-        "@type": "EntertainmentBusiness",
-        "name": "공덕 노래방 이벤트",
-        "description": "공덕 지역 프리미엄 노래방 이벤트 및 가라오케 정보 플랫폼",
-        "url": "https://t3b08-gd-kb-evt.vercel.app/",
-        "telephone": "010-6279-0862",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "공덕",
-            "addressCountry": "KR"
-        },
-        "priceRange": "₩₩",
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-                "opens": "14:00",
-                "closes": "06:00"
-            }
-        ],
-        "sameAs": []
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "14:00",
+      "closes": "06:00"
     }
-    </script>
+  ],
+  "sameAs": []
+}</script>
 
     <style>
         /* ===== RESET & BASE ===== */
