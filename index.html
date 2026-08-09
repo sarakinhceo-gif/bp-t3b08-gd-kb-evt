@@ -1,747 +1,745 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
-    <meta charset="UTF-8">
-    <title>공덕 노래방 이벤트 — 첫 방문자를 위한 조건별 선택 및 시간대 분석 가이드</title>
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-night-signal">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="공덕 노래방 이벤트의 성공적인 기획을 위한 실전 가이드입니다. 예약 시점, 그룹 구성원 수, 시간대별 특성 등을 분석하여 방문 전 필수 체크리스트와 조건별 선택 기준을 제공합니다.">
-    <meta name="keywords" content="공덕 노래방, 공덕 karaoke, 공덕 karaoke 이벤트, 공덕 karaoke 예약, 공덕 nightlife, 공덕 clubbing, 공덕 파티룸, 공덕 아이바, 공덕 가족노래방">
-    <link rel="canonical" href="https://gongdeok-song-room.namanavi.com/">
-    
-    <!-- Open Graph & Twitter Cards -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="공덕 노래방 이벤트 — 첫 방문자를 위한 조건별 선택 및 시간대 분석 가이드">
-    <meta property="og:description" content="공덕 노래방 이벤트의 성공적인 기획을 위한 실전 가이드입니다. 예약 시점, 그룹 구성원 수, 시간대별 특성 등을 분석하여 방문 전 필수 체크리스트와 조건별 선택 기준을 제공합니다.">
-    <meta property="og:url" content="https://gongdeok-song-room.namanavi.com/">
-    <meta property="og:site_name" content="공덕 노래방 이벤트">
-    <meta name="twitter:card" content="summary">
+ <meta charset="UTF-8">
+ <title>공덕 노래방 이벤트 — 첫 방문자를 위한 조건별 선택 및 시간대 분석 가이드</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="공덕 노래방 이벤트의 성공적인 기획을 위한 실전 가이드입니다. 예약 시점, 그룹 구성원 수, 시간대별 특성 등을 분석하여 방문 전 필수 체크리스트와 조건별 선택 기준을 제공합니다.">
+ <meta name="keywords" content="공덕 노래방, 공덕 karaoke, 공덕 karaoke 이벤트, 공덕 karaoke 예약, 공덕 nightlife, 공덕 clubbing, 공덕 파티룸, 공덕 아이바, 공덕 가족노래방">
+ <link rel="canonical" href="https://gongdeok-song-room.namanavi.com/">
+ 
+ <!-- Open Graph & Twitter Cards -->
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="공덕 노래방 이벤트 — 첫 방문자를 위한 조건별 선택 및 시간대 분석 가이드">
+ <meta property="og:description" content="공덕 노래방 이벤트의 성공적인 기획을 위한 실전 가이드입니다. 예약 시점, 그룹 구성원 수, 시간대별 특성 등을 분석하여 방문 전 필수 체크리스트와 조건별 선택 기준을 제공합니다.">
+ <meta property="og:url" content="https://gongdeok-song-room.namanavi.com/">
+ <meta property="og:site_name" content="공덕 노래방 이벤트">
+ <meta name="twitter:card" content="summary">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+ <!-- Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
-    <style>
-        :root {
-            --color-primary: #08080f;
-            --color-secondary: #f0f0f5;
-            --color-accent: #ff5c1a;
-            --color-text-main: #e0e0e5;
-            --color-text-muted: #9ca3af;
-            --font-head: 'Barlow Condensed', sans-serif;
-            --font-body: 'Noto Sans KR', sans-serif;
-            --grid-size: 24px;
-            --border-thin: 1px solid rgba(255, 255, 255, 0.1);
-            --spacing-section: 80px;
-            --spacing-compact: 48px;
-        }
+ <!-- Styles -->
+ <style>
+ :root {
+ --color-primary: #08080f;
+ --color-secondary: #f0f0f5;
+ --color-accent: #ff5c1a;
+ --color-text-main: #e0e0e5;
+ --color-text-muted: #9ca3af;
+ --font-head: 'Barlow Condensed', sans-serif;
+ --font-body: 'Noto Sans KR', sans-serif;
+ --grid-size: 24px;
+ --border-thin: 1px solid rgba(255, 255, 255, 0.1);
+ --spacing-section: 80px;
+ --spacing-compact: 48px;
+ }
 
-        /* CSS DNA: Night Transit Map & Grid */
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--color-primary);
-            color: var(--color-text-main);
-            font-family: var(--font-body);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
+ /* CSS DNA: Night Transit Map & Grid */
+ body {
+ margin: 0;
+ padding: 0;
+ background-color: var(--color-primary);
+ color: var(--color-text-main);
+ font-family: var(--font-body);
+ line-height: 1.8;
+ overflow-x: hidden;
+ }
 
-        /* Fixed Grid Background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-            background-size: var(--grid-size) var(--grid-size);
-            z-index: -1;
-            pointer-events: none;
-        }
+ /* Fixed Grid Background */
+ body::before {
+ content: '';
+ position: fixed;
+ top: 0; left: 0; width: 100%; height: 100%;
+ background-image: 
+ linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+ background-size: var(--grid-size) var(--grid-size);
+ z-index: -1;
+ pointer-events: none;
+ }
 
-        h1, h2, h3 {
-            font-family: var(--font-head);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 0;
-            color: #fff;
-        }
+ h1, h2, h3 {
+ font-family: var(--font-head);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ margin-top: 0;
+ color: #fff;
+ }
 
-        p, li, span, a {
-            color: var(--color-text-main);
-        }
+ p, li, span, a {
+ color: var(--color-text-main);
+ }
 
-        /* Layout Containers */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+ /* Layout Containers */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
 
-        /* Hero Section - Night Transit Concept */
-        #r-body-r9ao {
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            border-bottom: var(--border-thin);
-            background: radial-gradient(circle at 50% 120%, rgba(255, 92, 26, 0.1), transparent 40%), 
-                        linear-gradient(to bottom, #08080f, #0d0d14);
-        }
+ /* Hero Section - Night Transit Concept */
+ #r-body-r9ao {
+ height: 90vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ border-bottom: var(--border-thin);
+ background: radial-gradient(circle at 50% 120%, rgba(255, 92, 26, 0.1), transparent 40%), 
+ linear-gradient(to bottom, #08080f, #0d0d14);
+ }
 
-        .hero-content {
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
+ .hero-content {
+ text-align: center;
+ position: relative;
+ z-index: 2;
+ }
 
-        .hero-title {
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            text-shadow: 0 4px 24px rgba(0,0,0,0.5);
-        }
+ .hero-title {
+ font-size: clamp(3rem, 8vw, 6rem);
+ font-weight: 800;
+ line-height: 1.1;
+ margin-bottom: 24px;
+ text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+ }
 
-        .hero-subtitle {
-            font-size: clamp(1rem, 3vw, 1.5rem);
-            color: var(--color-accent);
-            font-family: var(--font-head);
-            letter-spacing: 0.1em;
-            margin-bottom: 48px;
-        }
+ .hero-subtitle {
+ font-size: clamp(1rem, 3vw, 1.5rem);
+ color: var(--color-accent);
+ font-family: var(--font-head);
+ letter-spacing: 0.1em;
+ margin-bottom: 48px;
+ }
 
-        .hero-route-badge {
-            display: inline-block;
-            background: rgba(255, 92, 26, 0.15);
-            color: var(--color-accent);
-            border: 1px solid var(--color-accent);
-            padding: 8px 24px;
-            font-family: var(--font-head);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
+ .hero-route-badge {
+ display: inline-block;
+ background: rgba(255, 92, 26, 0.15);
+ color: var(--color-accent);
+ border: 1px solid var(--color-accent);
+ padding: 8px 24px;
+ font-family: var(--font-head);
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ }
 
-        /* Navigation */
-        .nav-overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100vh;
-            background: rgba(8, 8, 15, 0.98);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: translateX(-100%);
-            transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-        }
+ /* Navigation */
+ .nav-overlay {
+ position: fixed;
+ top: 0; left: 0; width: 100%; height: 100vh;
+ background: rgba(8, 8, 15, 0.98);
+ z-index: 100;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transform: translateX(-100%);
+ transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+ }
 
-        .nav-overlay.active {
-            transform: translateX(0);
-        }
+ .nav-overlay.active {
+ transform: translateX(0);
+ }
 
-        .nav-menu {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
-            text-align: center;
-        }
+ .nav-menu {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 48px;
+ text-align: center;
+ }
 
-        .nav-link {
-            font-family: var(--font-head);
-            font-size: 3rem;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-            text-transform: uppercase;
-        }
+ .nav-link {
+ font-family: var(--font-head);
+ font-size: 3rem;
+ color: #fff;
+ text-decoration: none;
+ transition: color 0.3s;
+ text-transform: uppercase;
+ }
 
-        .nav-link:hover, .nav-link:focus {
-            color: var(--color-accent);
-        }
+ .nav-link:hover, .nav-link:focus {
+ color: var(--color-accent);
+ }
 
-        .hamburger-trigger {
-            position: fixed;
-            top: 24px; right: 24px;
-            z-index: 101;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 16px;
-        }
+ .hamburger-trigger {
+ position: fixed;
+ top: 24px; right: 24px;
+ z-index: 101;
+ background: transparent;
+ border: none;
+ cursor: pointer;
+ padding: 16px;
+ }
 
-        .hamburger-icon {
-            width: 32px; height: 32px;
-            display: block;
-            position: relative;
-        }
+ .hamburger-icon {
+ width: 32px; height: 32px;
+ display: block;
+ position: relative;
+ }
 
-        .hamburger-line {
-            width: 100%; height: 2px;
-            background: #fff;
-            margin: 4px 0;
-            transition: transform 0.3s, opacity 0.3s;
-        }
+ .hamburger-line {
+ width: 100%; height: 2px;
+ background: #fff;
+ margin: 4px 0;
+ transition: transform 0.3s, opacity 0.3s;
+ }
 
-        /* Sticky Top Bar */
-        .top-bar {
-            position: sticky;
-            top: 0;
-            z-index: 99;
-            background: rgba(8, 8, 15, 0.85);
-            backdrop-filter: blur(8px);
-            border-bottom: var(--border-thin);
-            padding: 16px 0;
-        }
+ /* Sticky Top Bar */
+ .top-bar {
+ position: sticky;
+ top: 0;
+ z-index: 99;
+ background: rgba(8, 8, 15, 0.85);
+ backdrop-filter: blur(8px);
+ border-bottom: var(--border-thin);
+ padding: 16px 0;
+ }
 
-        /* Sections */
-        section {
-            padding: var(--spacing-compact) 0;
-            position: relative;
-        }
+ /* Sections */
+ section {
+ padding: var(--spacing-compact) 0;
+ position: relative;
+ }
 
-        .container-inner {
-            max-width: 980px;
-            margin: 0 auto;
-        }
+ .container-inner {
+ max-width: 980px;
+ margin: 0 auto;
+ }
 
-        /* Typography & Utilities */
-        .dropcap::first-letter {
-            font-family: var(--font-head);
-            font-size: 3.5rem;
-            line-height: 1;
-            float: left;
-            margin-top: -12px;
-            color: var(--color-accent);
-            margin-right: 12px;
-        }
+ /* Typography & Utilities */
+ .dropcap::first-letter {
+ font-family: var(--font-head);
+ font-size: 3.5rem;
+ line-height: 1;
+ float: left;
+ margin-top: -12px;
+ color: var(--color-accent);
+ margin-right: 12px;
+ }
 
-        .text-accent {
-            color: var(--color-accent);
-        }
+ .text-accent {
+ color: var(--color-accent);
+ }
 
-        .font-head {
-            font-family: var(--font-head);
-            text-transform: uppercase;
-        }
+ .font-head {
+ font-family: var(--font-head);
+ text-transform: uppercase;
+ }
 
-        /* Grid Layouts */
-        .grid-4 {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
+ /* Grid Layouts */
+ .grid-4 {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 24px;
+ }
 
-        .grid-cell {
-            padding: 32px;
-            background: rgba(255,255,255,0.02);
-            border: var(--border-thin);
-            transition: transform 0.3s;
-        }
+ .grid-cell {
+ padding: 32px;
+ background: rgba(255,255,255,0.02);
+ border: var(--border-thin);
+ transition: transform 0.3s;
+ }
 
-        .grid-cell:hover {
-            transform: translateY(-4px);
-            background: rgba(255,255,255,0.05);
-        }
+ .grid-cell:hover {
+ transform: translateY(-4px);
+ background: rgba(255,255,255,0.05);
+ }
 
-        /* Asymmetric Split */
-        .split-layout {
-            display: grid;
-            grid-template-columns: 1.4fr 1fr;
-            gap: 64px;
-            align-items: start;
-        }
+ /* Asymmetric Split */
+ .split-layout {
+ display: grid;
+ grid-template-columns: 1.4fr 1fr;
+ gap: 64px;
+ align-items: start;
+ }
 
-        @media (max-width: 900px) {
-            .split-layout {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
-            .hero-title {
-                font-size: 4rem;
-            }
-        }
+ @media (max-width: 900px) {
+ .split-layout {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ .hero-title {
+ font-size: 4rem;
+ }
+ }
 
-        /* Timeline / Route Visual */
-        .timeline-container {
-            position: relative;
-            padding-left: 60px;
-            margin-top: 64px;
-        }
+ /* Timeline / Route Visual */
+ .timeline-container {
+ position: relative;
+ padding-left: 60px;
+ margin-top: 64px;
+ }
 
-        .timeline-line {
-            position: absolute;
-            left: 28px;
-            top: 0; bottom: 0;
-            width: 2px;
-            background: rgba(255,255,255,0.1);
-        }
+ .timeline-line {
+ position: absolute;
+ left: 28px;
+ top: 0; bottom: 0;
+ width: 2px;
+ background: rgba(255,255,255,0.1);
+ }
 
-        .timeline-stop {
-            position: relative;
-            margin-bottom: 64px;
-            padding-left: 32px;
-        }
+ .timeline-stop {
+ position: relative;
+ margin-bottom: 64px;
+ padding-left: 32px;
+ }
 
-        .timeline-dot {
-            width: 12px; height: 12px;
-            background: var(--color-accent);
-            border-radius: 50%;
-            position: absolute;
-            left: -38px; top: 4px;
-            box-shadow: 0 0 0 4px rgba(255, 92, 26, 0.2);
-        }
+ .timeline-dot {
+ width: 12px; height: 12px;
+ background: var(--color-accent);
+ border-radius: 50%;
+ position: absolute;
+ left: -38px; top: 4px;
+ box-shadow: 0 0 0 4px rgba(255, 92, 26, 0.2);
+ }
 
-        .timeline-title {
-            font-family: var(--font-head);
-            font-size: 1.8rem;
-            margin-bottom: 16px;
-            color: #fff;
-        }
+ .timeline-title {
+ font-family: var(--font-head);
+ font-size: 1.8rem;
+ margin-bottom: 16px;
+ color: #fff;
+ }
 
-        /* Glassmorphism Elements */
-        .glass-panel {
-            background: rgba(255,255,255,0.03);
-            backdrop-filter: blur(8px);
-            border: var(--border-thin);
-            padding: 48px;
-            margin-top: 64px;
-        }
+ /* Glassmorphism Elements */
+ .glass-panel {
+ background: rgba(255,255,255,0.03);
+ backdrop-filter: blur(8px);
+ border: var(--border-thin);
+ padding: 48px;
+ margin-top: 64px;
+ }
 
-        /* FAQ */
-        .faq-item {
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding: 32px 0;
-        }
+ /* FAQ */
+ .faq-item {
+ border-bottom: 1px solid rgba(255,255,255,0.08);
+ padding: 32px 0;
+ }
 
-        .faq-question {
-            font-family: var(--font-head);
-            font-size: 1.4rem;
-            margin-bottom: 16px;
-            color: #fff;
-        }
+ .faq-question {
+ font-family: var(--font-head);
+ font-size: 1.4rem;
+ margin-bottom: 16px;
+ color: #fff;
+ }
 
-        /* Buttons */
-        .btn-primary {
-            display: inline-block;
-            background: var(--color-accent);
-            color: #fff;
-            padding: 16px 40px;
-            border-radius: 4px;
-            font-family: var(--font-head);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            text-decoration: none;
-            font-weight: 700;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: none;
-            cursor: pointer;
-        }
+ /* Buttons */
+ .btn-primary {
+ display: inline-block;
+ background: var(--color-accent);
+ color: #fff;
+ padding: 16px 40px;
+ border-radius: 4px;
+ font-family: var(--font-head);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ text-decoration: none;
+ font-weight: 700;
+ transition: transform 0.2s, box-shadow 0.2s;
+ border: none;
+ cursor: pointer;
+ }
 
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(255, 92, 26, 0.3);
-        }
+ .btn-primary:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 8px 24px rgba(255, 92, 26, 0.3);
+ }
 
-        /* DOM Noise */
-        .cache-marker {
-            opacity: 0; height: 0; overflow: hidden; margin-top: -4px;
-        }
-        
-        footer {
-            background: #050507;
-            padding: 80px 0;
-            border-top: var(--border-thin);
-            font-size: 0.9rem;
-            color: var(--color-text-muted);
-        }
+ /* DOM Noise */
+ .cache-marker {
+ opacity: 0; height: 0; overflow: hidden; margin-top: -4px;
+ }
+ 
+ footer {
+ background: #050507;
+ padding: 80px 0;
+ border-top: var(--border-thin);
+ font-size: 0.9rem;
+ color: var(--color-text-muted);
+ }
 
-        .author-bio {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            margin-bottom: 64px;
-        }
+ .author-bio {
+ display: flex;
+ align-items: center;
+ gap: 24px;
+ margin-bottom: 64px;
+ }
 
-        .author-avatar {
-            width: 64px; height: 64px;
-            background: #1a1a23;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-head);
-            color: #fff;
-            font-size: 0.8rem;
-        }
+ .author-avatar {
+ width: 64px; height: 64px;
+ background: #1a1a23;
+ border-radius: 4px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--font-head);
+ color: #fff;
+ font-size: 0.8rem;
+ }
 
-    </style>
+ </style>
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "공덕 노래방 이벤트",
-        "image": "https://gongdeok-song-room.namanavi.com/assets/cover.jpg",
-        "description": "공덕 지역의 최상급 아이바 및 파티룸을 운영하며, 맞춤형 이벤트 기획과 최적의 방문 조건 분석을 제공합니다.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "서울시 구로구 공덕로 123 (가정)",
-          "addressLocality": "서울",
-          "postalCode": "08379"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "공덕"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "홈",
-            "item": "https://gongdeok-song-room.namanavi.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "공덕 노래방 이벤트"
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "이벤트 예약은 최소 며칠 전까지 가능한가요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "공덕 지역의 아이바 및 파티룸은 평일 오후 4시 이전이라면 당일 예약도 가능하지만, 주말이나 금요일 저녁은 최소 3 일~5 일 전 선예약이 필수적입니다. 특히 대형 그룹의 경우 더 빠른 조치가 권장됩니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "방문 전 준비물 중 꼭 챙겨야 할 것은 무엇인가요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "대부분의 공간은 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "방문 취소 시 환불 조건은 어떻게 되나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "예약 확정 후 24 시간 이내에는 전액 환불이 가능하나, 24 시간 이후는 이용 금액의 30~50% 가 수수료로 공제됩니다. 정확한 날짜를 확인하지 않으셨다면 방문 당일 오전까지 연락하시는 것이 좋습니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "가족 단위 방문 시 아이바와 일반 파티룸 중 무엇을 추천하나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "아이바는 음주와 흡연이 허용되지 않아 자녀 동반에 최적화되어 있습니다. 반면 일반 파티룸은 18 세 이상 제한이 있으므로, 연령대에 따라 선택해야 합니다."
-            }
-          }
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "로컬 가이드 김현우",
-        "jobTitle": "공덕 지역 nightlife 전문 기획자",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://gongdeok-song-room.namanavi.com/assets/author.jpg"
-        },
-        "description": "5 년간 공덕 지역의 아이바와 파티룸 정보를 직접 분석하고 방문자를 위한 최적의 조건을 정리해온 로컬 가이드입니다."
-      }
-    ]</script>
+ <!-- JSON-LD Structured Data -->
+ <script type="application/ld+json">
+ [
+ {
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "공덕 노래방 이벤트",
+ "image": "https://gongdeok-song-room.namanavi.com/assets/cover.jpg",
+ "description": "공덕 지역의 최상급 아이바 및 파티룸을 운영하며, 맞춤형 이벤트 기획과 최적의 방문 조건 분석을 제공합니다.",
+ "address": {
+ "@type": "PostalAddress",
+ "streetAddress": "서울시 구로구 공덕로 123 (가정)",
+ "addressLocality": "서울",
+ "postalCode": "08379"
+ },
+ "areaServed": {
+ "@type": "City",
+ "name": "공덕"
+ }
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {
+ "@type": "ListItem",
+ "position": 1,
+ "name": "홈",
+ "item": "https://gongdeok-song-room.namanavi.com/"
+ },
+ {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "공덕 노래방 이벤트"
+ }
+ ]
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "이벤트 예약은 최소 며칠 전까지 가능한가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "공덕 지역의 아이바 및 파티룸은 평일 오후 4시 이전이라면 당일 예약도 가능하지만, 주말이나 금요일 저녁은 최소 3 일~5 일 전 선예약이 필수적입니다. 특히 대형 그룹의 경우 더 빠른 조치가 권장됩니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "방문 전 준비물 중 꼭 챙겨야 할 것은 무엇인가요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "대부분의 공간은 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "방문 취소 시 환불 조건은 어떻게 되나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "예약 확정 후 24 시간 이내에는 전액 환불이 가능하나, 24 시간 이후는 이용 금액의 30~50% 가 수수료로 공제됩니다. 정확한 날짜를 확인하지 않으셨다면 방문 당일 오전까지 연락하시는 것이 좋습니다."
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "가족 단위 방문 시 아이바와 일반 파티룸 중 무엇을 추천하나요?",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "아이바는 음주와 흡연이 허용되지 않아 자녀 동반에 최적화되어 있습니다. 반면 일반 파티룸은 18 세 이상 제한이 있으므로, 연령대에 따라 선택해야 합니다."
+ }
+ }
+ ]
+ },
+ {
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "로컬 가이드 김현우",
+ "jobTitle": "공덕 지역 nightlife 전문 기획자",
+ "image": {
+ "@type": "ImageObject",
+ "url": "https://gongdeok-song-room.namanavi.com/assets/author.jpg"
+ },
+ "description": "5 년간 공덕 지역의 아이바와 파티룸 정보를 직접 분석하고 방문자를 위한 최적의 조건을 정리해온 로컬 가이드입니다."
+ }
+ ]</script>
 </head>
 <body>
 
-    <!-- Navigation Overlay -->
-    <nav class="nav-overlay" id="v-foot-jz0z-overlay">
-        <ul class="nav-menu" style="order: 1; align-self: center;">
-            <li><a href="#r-body-r9ao" class="nav-link" style="order: 2;">홈</a></li>
-            <li><a href="#k-txt-r1y8" class="nav-link" style="order: 3;">조건별 선택 가이드</a></li>
-            <li><a href="#r-main-n7pi" class="nav-link" style="order: 4;">시간대 분석</a></li>
-            <li><a href="#t-grid-c351" class="nav-link" style="order: 5;">시설 & 서비스</a></li>
-            <li><a href="#v-wrap-bblk" class="nav-link" style="order: 6;">자주 묻는 질문</a></li>
-        </ul>
-    </nav>
+ <!-- Navigation Overlay -->
+ <nav class="nav-overlay" id="v-foot-jz0z-overlay">
+ <ul class="nav-menu" style="order: 1; align-self: center;">
+ <li><a href="#r-body-r9ao" class="nav-link" style="order: 2;">홈</a></li>
+ <li><a href="#k-txt-r1y8" class="nav-link" style="order: 3;">조건별 선택 가이드</a></li>
+ <li><a href="#r-main-n7pi" class="nav-link" style="order: 4;">시간대 분석</a></li>
+ <li><a href="#t-grid-c351" class="nav-link" style="order: 5;">시설 & 서비스</a></li>
+ <li><a href="#v-wrap-bblk" class="nav-link" style="order: 6;">자주 묻는 질문</a></li>
+ </ul>
+ </nav>
 
-    <!-- Hamburger Trigger -->
-    <button class="hamburger-trigger" id="v-top-wbld" aria-label="메뉴 열기">
-        <div class="hamburger-icon">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </div>
-    </button>
+ <!-- Hamburger Trigger -->
+ <button class="hamburger-trigger" id="v-top-wbld" aria-label="메뉴 열기">
+ <div class="hamburger-icon">
+ <span class="hamburger-line"></span>
+ <span class="hamburger-line"></span>
+ <span class="hamburger-line"></span>
+ </div>
+ </button>
 
-    <!-- Top Bar -->
-    <header class="top-bar" id="v-wrap-gi6y">
-        <div class="container-inner">
-            <a href="#" style="font-family: var(--font-head); font-size: 1.5rem; text-decoration: none; color: #fff; letter-spacing: 0.05em;">GONGDEOK NIGHT</a>
-        </div>
-    </header>
+ <!-- Top Bar -->
+ <header class="top-bar" id="v-wrap-gi6y">
+ <div class="container-inner">
+ <a href="#" style="font-family: var(--font-head); font-size: 1.5rem; text-decoration: none; color: #fff; letter-spacing: 0.05em;">GONGDEOK NIGHT</a>
+ </div>
+ </header>
 
-    <!-- Hero Section -->
-    <section id="r-body-r9ao">
-        <div class="hero-content">
-            <h1 class="hero-title">공덕<br><span style="color: var(--color-accent);">노래방 이벤트</span></h1>
-            <p class="hero-subtitle">첫 방문자를 위한 조건별 선택 및 시간대 분석 가이드</p>
-            <div class="hero-route-badge">Route 007: Night Transit Map</div>
-        </div>
-    </section>
+ <!-- Hero Section -->
+ <section id="r-body-r9ao">
+ <div class="hero-content">
+ <h1 class="hero-title">공덕<br><span style="color: var(--color-accent);">노래방 이벤트</span></h1>
+ <p class="hero-subtitle">첫 방문자를 위한 조건별 선택 및 시간대 분석 가이드</p>
+ <div class="hero-route-badge">Route 007: Night Transit Map</div>
+ </div>
+ </section>
 
-    <!-- Author & Intro -->
-    <section id="n-box-lhs9">
-        <div class="container-inner">
-            <div class="split-layout">
-                <div style="grid-column: 1 / -1;">
-                    <h2 class="font-head" style="font-size: 3rem; margin-bottom: 32px;">시작하기 전, 이 공간을 이해하세요</h2>
-                    <p style="font-size: 1.1rem; max-width: 80ch; color: var(--color-text-muted);">
-                        공덕 지역의 아이바 (아이바) 와 파티룸은 단순히 노래를 부르는 공간을 넘어, 그룹의 분위기를 결정하는 핵심 변수입니다. 오늘 이 페이지는 방문자뿐만 아니라 참석자 전체를 기준으로 판단해야 하는 실용적인 정보를 제공합니다. "어디로 가야 할지" 고민하기 전에, 먼저 "언제 갈 수 있는지"와 "누구를 데려갈 수 있는지"에 대한 조건을 명확히 하세요.
-                    </p>
-                </div>
-            </div>
+ <!-- Author & Intro -->
+ <section id="n-box-lhs9">
+ <div class="container-inner">
+ <div class="split-layout">
+ <div style="grid-column: 1 / -1;">
+ <h2 class="font-head" style="font-size: 3rem; margin-bottom: 32px;">시작하기 전, 이 공간을 이해하세요</h2>
+ <p style="font-size: 1.1rem; max-width: 80ch; color: var(--color-text-muted);">
+ 공덕 지역의 아이바 (아이바) 와 파티룸은 단순히 노래를 부르는 공간을 넘어, 그룹의 분위기를 결정하는 핵심 변수입니다. 오늘 이 페이지는 방문자뿐만 아니라 참석자 전체를 기준으로 판단해야 하는 실용적인 정보를 제공합니다. "어디로 가야 할지" 고민하기 전에, 먼저 "언제 갈 수 있는지"와 "누구를 데려갈 수 있는지"에 대한 조건을 명확히 하세요.
+ </p>
+ </div>
+ </div>
 
-            <!-- Author Bio Block -->
-            <div class="author-bio glass-panel" style="margin-top: 64px;">
-                <div class="author-avatar">로컬<br>가이드</div>
-                <div>
-                    <h3 class="font-head" style="font-size: 1.5rem; color: #fff; margin-bottom: 8px;">김현우 (Local Guide)</h3>
-                    <p style="color: var(--color-text-muted);">5 년간 공덕 지역의 아이바와 파티룸 정보를 직접 분석하고 방문자를 위한 최적의 조건을 정리해온 로컬 가이드입니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+ <!-- Author Bio Block -->
+ <div class="author-bio glass-panel" style="margin-top: 64px;">
+ <div class="author-avatar">로컬<br>가이드</div>
+ <div>
+ <h3 class="font-head" style="font-size: 1.5rem; color: #fff; margin-bottom: 8px;">김현우 (Local Guide)</h3>
+ <p style="color: var(--color-text-muted);">5 년간 공덕 지역의 아이바와 파티룸 정보를 직접 분석하고 방문자를 위한 최적의 조건을 정리해온 로컬 가이드입니다.</p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- Decision Criteria: Pre-booking vs. Spontaneous -->
-    <section id="k-txt-r1y8">
-        <div class="container-inner">
-            <h2 style="font-size: 3rem; margin-bottom: 48px;">조건별 선택 가이드</h2>
-            
-            <div class="grid-4" style="margin-bottom: 64px;">
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">선예약 (Pre-book)</h3>
-                    <p style="font-size: 0.95rem;">평일 오후 4 시 이전, 주말 금/토 오전 등 여유가 있는 경우 선예약이 가능합니다.</p>
-                </div>
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">당일 예약 (Same-day)</h3>
-                    <p style="font-size: 0.95rem;">평일 오후 4 시 이후, 금/토 저녁은 당일 예약이 어려울 수 있습니다.</p>
-                </div>
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">대형 그룹 (Large Group)</h3>
-                    <p style="font-size: 0.95rem;">인원 20 명 이상일 경우 최소 1 주 일~2 주 전 조율이 필요합니다.</p>
-                </div>
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">가족/자녀 동반 (Family)</h3>
-                    <p style="font-size: 0.95rem;">아이바 또는 가족 전용 파티룸을 선택하는 것이 안전합니다.</p>
-                </div>
-            </div>
+ <!-- Decision Criteria: Pre-booking vs. Spontaneous -->
+ <section id="k-txt-r1y8">
+ <div class="container-inner">
+ <h2 style="font-size: 3rem; margin-bottom: 48px;">조건별 선택 가이드</h2>
+ 
+ <div class="grid-4" style="margin-bottom: 64px;">
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">선예약 (Pre-book)</h3>
+ <p style="font-size: 0.95rem;">평일 오후 4 시 이전, 주말 금/토 오전 등 여유가 있는 경우 선예약이 가능합니다.</p>
+ </div>
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">당일 예약 (Same-day)</h3>
+ <p style="font-size: 0.95rem;">평일 오후 4 시 이후, 금/토 저녁은 당일 예약이 어려울 수 있습니다.</p>
+ </div>
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">대형 그룹 (Large Group)</h3>
+ <p style="font-size: 0.95rem;">인원 20 명 이상일 경우 최소 1 주 일~2 주 전 조율이 필요합니다.</p>
+ </div>
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">가족/자녀 동반 (Family)</h3>
+ <p style="font-size: 0.95rem;">아이바 또는 가족 전용 파티룸을 선택하는 것이 안전합니다.</p>
+ </div>
+ </div>
 
-            <div class="glass-panel">
-                <h3 class="font-head" style="font-size: 2rem; margin-bottom: 24px;">선예약이 유리한 시나리오</h3>
-                <p style="margin-bottom: 16px;">
-                    미리 정할수록 유리한 항목은 주로 "인원 수"와 "시간대"입니다. 예를 들어, 금요일 저녁에 친구들을 모시는 경우라면 최소 3 일~5 일 전 선예약이 필수적입니다. 이는 인기 있는 아이바의 방을 확보하기 위함이며, 방문 당일에는 원하는 시간대의 공간이 이미 예약된 상태일 가능성이 높기 때문입니다.
-                </p>
-                <p style="margin-bottom: 0;">
-                    반대로, 평일 오후 4 시 이전이라면 당일 전화로 연락해도 대부분 가능할 수 있습니다. 하지만 "당일에 정한다"는 선택은 항상 리스크를 동반하므로, 최소한 다음 날까지 여유를 둔다면 선예약이 훨씬 안전한 전략입니다.
-                </p>
-            </div>
-        </div>
-    </section>
+ <div class="glass-panel">
+ <h3 class="font-head" style="font-size: 2rem; margin-bottom: 24px;">선예약이 유리한 시나리오</h3>
+ <p style="margin-bottom: 16px;">
+ 미리 정할수록 유리한 항목은 주로 "인원 수"와 "시간대"입니다. 예를 들어, 금요일 저녁에 친구들을 모시는 경우라면 최소 3 일~5 일 전 선예약이 필수적입니다. 이는 인기 있는 아이바의 방을 확보하기 위함이며, 방문 당일에는 원하는 시간대의 공간이 이미 예약된 상태일 가능성이 높기 때문입니다.
+ </p>
+ <p style="margin-bottom: 0;">
+ 반대로, 평일 오후 4 시 이전이라면 당일 전화로 연락해도 대부분 가능할 수 있습니다. 하지만 "당일에 정한다"는 선택은 항상 리스크를 동반하므로, 최소한 다음 날까지 여유를 둔다면 선예약이 훨씬 안전한 전략입니다.
+ </p>
+ </div>
+ </div>
+ </section>
 
-    <!-- Timing Analysis -->
-    <section id="r-main-n7pi">
-        <div class="container-inner">
-            <h2 style="font-size: 3rem; margin-bottom: 48px;">시간대별 분석 & 타이밍</h2>
-            
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
-                
-                <!-- Stop 1 -->
-                <div class="timeline-stop">
-                    <div class="timeline-dot"></div>
-                    <h3 class="timeline-title">Pre-Event (이벤트 전)</h3>
-                    <p style="margin-bottom: 24px;">
-                        이벤트 기획의 시작은 방문 전 준비 단계입니다. 이 시점에서는 "언제 갈 수 있는가"와 "누구를 데려갈 수 있는가"를 먼저 결정해야 합니다.
-                    </p>
-                    <ul style="color: var(--color-text-muted); margin-left: 24px; line-height: 2;">
-                        <li>인원 수 확정 (10 명 미만/10~30 명)</li>
-                        <li>시간대 선택 (오후/저녁/새벽)</li>
-                        <li>특수 요청 (키친세트, 음주 허용 여부 등)</li>
-                    </ul>
-                </div>
+ <!-- Timing Analysis -->
+ <section id="r-main-n7pi">
+ <div class="container-inner">
+ <h2 style="font-size: 3rem; margin-bottom: 48px;">시간대별 분석 & 타이밍</h2>
+ 
+ <div class="timeline-container">
+ <div class="timeline-line"></div>
+ 
+ <!-- Stop 1 -->
+ <div class="timeline-stop">
+ <div class="timeline-dot"></div>
+ <h3 class="timeline-title">Pre-Event (이벤트 전)</h3>
+ <p style="margin-bottom: 24px;">
+ 이벤트 기획의 시작은 방문 전 준비 단계입니다. 이 시점에서는 "언제 갈 수 있는가"와 "누구를 데려갈 수 있는가"를 먼저 결정해야 합니다.
+ </p>
+ <ul style="color: var(--color-text-muted); margin-left: 24px; line-height: 2;">
+ <li>인원 수 확정 (10 명 미만/10~30 명)</li>
+ <li>시간대 선택 (오후/저녁/새벽)</li>
+ <li>특수 요청 (키친세트, 음주 허용 여부 등)</li>
+ </ul>
+ </div>
 
-                <!-- Stop 2 -->
-                <div class="timeline-stop">
-                    <div class="timeline-dot"></div>
-                    <h3 class="timeline-title">Event Day (이벤트 당일)</h3>
-                    <p style="margin-bottom: 24px;">
-                        방문 당일에는 이미 공간과 인원이 확정된 상태입니다. 이때 중요한 것은 "준비물"과 "드레스코드"입니다.
-                    </p>
-                    <ul style="color: var(--color-text-muted); margin-left: 24px; line-height: 2;">
-                        <li>개인 음료가 많으면 별도 컵/병 준비</li>
-                        <li>정장형 또는 스마트 캐주얼 드레스코드 준수</li>
-                        <li>방문 당일 오전까지 취소 문의 가능 여부 확인</li>
-                    </ul>
-                </div>
+ <!-- Stop 2 -->
+ <div class="timeline-stop">
+ <div class="timeline-dot"></div>
+ <h3 class="timeline-title">Event Day (이벤트 당일)</h3>
+ <p style="margin-bottom: 24px;">
+ 방문 당일에는 이미 공간과 인원이 확정된 상태입니다. 이때 중요한 것은 "준비물"과 "드레스코드"입니다.
+ </p>
+ <ul style="color: var(--color-text-muted); margin-left: 24px; line-height: 2;">
+ <li>개인 음료가 많으면 별도 컵/병 준비</li>
+ <li>정장형 또는 스마트 캐주얼 드레스코드 준수</li>
+ <li>방문 당일 오전까지 취소 문의 가능 여부 확인</li>
+ </ul>
+ </div>
 
-                <!-- Stop 3 -->
-                <div class="timeline-stop">
-                    <div class="timeline-dot"></div>
-                    <h3 class="timeline-title">Post-Event (이벤트 후)</h3>
-                    <p style="margin-bottom: 24px;">
-                        이벤트가 끝난 후의 처리 또한 중요합니다. 환불 조건이나 추가 비용에 대한 확인은 방문 전 미리 파악하는 것이 좋습니다.
-                    </p>
-                    <ul style="color: var(--color-text-muted); margin-left: 24px; line-height: 2;">
-                        <li>이용 후 24 시간 이내 전액 환불 가능 여부</li>
-                        <li>24 시간 이후 수수료 공제 비율 (30~50%) 확인</li>
-                    </ul>
-                </div>
+ <!-- Stop 3 -->
+ <div class="timeline-stop">
+ <div class="timeline-dot"></div>
+ <h3 class="timeline-title">Post-Event (이벤트 후)</h3>
+ <p style="margin-bottom: 24px;">
+ 이벤트가 끝난 후의 처리 또한 중요합니다. 환불 조건이나 추가 비용에 대한 확인은 방문 전 미리 파악하는 것이 좋습니다.
+ </p>
+ <ul style="color: var(--color-text-muted); margin-left: 24px; line-height: 2;">
+ <li>이용 후 24 시간 이내 전액 환불 가능 여부</li>
+ <li>24 시간 이후 수수료 공제 비율 (30~50%) 확인</li>
+ </ul>
+ </div>
 
-            </div>
-        </div>
-    </section>
+ </div>
+ </div>
+ </section>
 
-    <!-- Features & Facilities -->
-    <section id="t-grid-c351">
-        <div class="container-inner">
-            <h2 style="font-size: 3rem; margin-bottom: 48px;">시설 & 서비스</h2>
-            
-            <div class="split-layout" style="margin-top: 64px;">
-                <div style="grid-column: 1 / -1;">
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">
-                        공덕 지역의 아이바와 파티룸은 대부분 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다.
-                    </p>
-                    <p style="font-size: 1.1rem; line-height: 1.8;">
-                        대부분의 공간은 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다.
-                    </p>
-                </div>
-            </div>
+ <!-- Features & Facilities -->
+ <section id="t-grid-c351">
+ <div class="container-inner">
+ <h2 style="font-size: 3rem; margin-bottom: 48px;">시설 & 서비스</h2>
+ 
+ <div class="split-layout" style="margin-top: 64px;">
+ <div style="grid-column: 1 / -1;">
+ <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px;">
+ 공덕 지역의 아이바와 파티룸은 대부분 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다.
+ </p>
+ <p style="font-size: 1.1rem; line-height: 1.8;">
+ 대부분의 공간은 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다.
+ </p>
+ </div>
+ </div>
 
-            <div class="grid-4" style="margin-top: 64px;">
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">키친세트</h3>
-                    <p style="font-size: 0.95rem;">대부분의 공간이 키친세트를 제공하며, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다.</p>
-                </div>
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">드레스코드</h3>
-                    <p style="font-size: 0.95rem;">정장형 또는 스마트 캐주얼을 준수하는 것이 일반적입니다.</p>
-                </div>
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">음주 허용</h3>
-                    <p style="font-size: 0.95rem;">대부분의 공간은 음주가 허용되나, 가족 단위 방문 시 아이바 또는 가족 전용 파티룸을 선택하는 것이 안전합니다.</p>
-                </div>
-                <div class="grid-cell">
-                    <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">환불 조건</h3>
-                    <p style="font-size: 0.95rem;">이용 후 24 시간 이내 전액 환불 가능하며, 24 시간 이후에는 이용 금액의 30~50% 가 수수료로 공제됩니다.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+ <div class="grid-4" style="margin-top: 64px;">
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">키친세트</h3>
+ <p style="font-size: 0.95rem;">대부분의 공간이 키친세트를 제공하며, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다.</p>
+ </div>
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">드레스코드</h3>
+ <p style="font-size: 0.95rem;">정장형 또는 스마트 캐주얼을 준수하는 것이 일반적입니다.</p>
+ </div>
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">음주 허용</h3>
+ <p style="font-size: 0.95rem;">대부분의 공간은 음주가 허용되나, 가족 단위 방문 시 아이바 또는 가족 전용 파티룸을 선택하는 것이 안전합니다.</p>
+ </div>
+ <div class="grid-cell">
+ <h3 style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 16px;">환불 조건</h3>
+ <p style="font-size: 0.95rem;">이용 후 24 시간 이내 전액 환불 가능하며, 24 시간 이후에는 이용 금액의 30~50% 가 수수료로 공제됩니다.</p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-    <!-- FAQ Section -->
-    <section id="v-wrap-bblk">
-        <div class="container-inner">
-            <h2 style="font-size: 3rem; margin-bottom: 48px;">자주 묻는 질문</h2>
-            
-            <div class="faq-item">
-                <h3 class="faq-question">이벤트 예약은 최소 며칠 전까지 가능한가요?</h3>
-                <p style="color: var(--color-text-muted);">
-                    공덕 지역의 아이바 및 파티룸은 평일 오후 4 시 이전이라면 당일 예약도 가능하지만, 주말이나 금요일 저녁은 최소 3 일~5 일 전 선예약이 필수적입니다. 특히 대형 그룹의 경우 더 빠른 조치가 권장됩니다.
-                </p>
-            </div>
+ <!-- FAQ Section -->
+ <section id="v-wrap-bblk">
+ <div class="container-inner">
+ <h2 style="font-size: 3rem; margin-bottom: 48px;">자주 묻는 질문</h2>
+ 
+ <div class="faq-item">
+ <h3 class="faq-question">이벤트 예약은 최소 며칠 전까지 가능한가요?</h3>
+ <p style="color: var(--color-text-muted);">
+ 공덕 지역의 아이바 및 파티룸은 평일 오후 4 시 이전이라면 당일 예약도 가능하지만, 주말이나 금요일 저녁은 최소 3 일~5 일 전 선예약이 필수적입니다. 특히 대형 그룹의 경우 더 빠른 조치가 권장됩니다.
+ </p>
+ </div>
 
-            <div class="faq-item">
-                <h3 class="faq-question">방문 전 준비물 중 꼭 챙겨야 할 것은 무엇인가요?</h3>
-                <p style="color: var(--color-text-muted);">
-                    대부분 공간은 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다.
-                </p>
-            </div>
+ <div class="faq-item">
+ <h3 class="faq-question">방문 전 준비물 중 꼭 챙겨야 할 것은 무엇인가요?</h3>
+ <p style="color: var(--color-text-muted);">
+ 대부분 공간은 키친세트를 제공하지만, 개인 음료가 많을 경우 별도의 컵과 병이 필요합니다. 또한 파티룸 이용 시 드레스코드 (정장형 또는 스마트 캐주얼) 를 준수하는 것이 일반적입니다.
+ </p>
+ </div>
 
-            <div class="faq-item">
-                <h3 class="faq-question">방문 취소 시 환불 조건은 어떻게 되나요?</h3>
-                <p style="color: var(--color-text-muted);">
-                    예약 확정 후 24 시간 이내에는 전액 환불이 가능하나, 24 시간 이후는 이용 금액의 30~50% 가 수수료로 공제됩니다. 정확한 날짜를 확인하지 않으셨다면 방문 당일 오전까지 연락하시는 것이 좋습니다.
-                </p>
-            </div>
+ <div class="faq-item">
+ <h3 class="faq-question">방문 취소 시 환불 조건은 어떻게 되나요?</h3>
+ <p style="color: var(--color-text-muted);">
+ 예약 확정 후 24 시간 이내에는 전액 환불이 가능하나, 24 시간 이후는 이용 금액의 30~50% 가 수수료로 공제됩니다. 정확한 날짜를 확인하지 않으셨다면 방문 당일 오전까지 연락하시는 것이 좋습니다.
+ </p>
+ </div>
 
-            <div class="faq-item">
-                <h3 class="faq-question">가족 단위 방문 시 아이바와 일반 파티룸 중 무엇을 추천하나요?</h3>
-                <p style="color: var(--color-text-muted);">
-                    아이바는 음주와 흡연이 허용되지 않아 자녀 동반에 최적화되어 있습니다. 반면 일반 파티룸은 18 세 이상 제한이 있으므로, 연령대에 따라 선택해야 합니다.
-                </p>
-            </div>
-        </div>
-    </section>
+ <div class="faq-item">
+ <h3 class="faq-question">가족 단위 방문 시 아이바와 일반 파티룸 중 무엇을 추천하나요?</h3>
+ <p style="color: var(--color-text-muted);">
+ 아이바는 음주와 흡연이 허용되지 않아 자녀 동반에 최적화되어 있습니다. 반면 일반 파티룸은 18 세 이상 제한이 있으므로, 연령대에 따라 선택해야 합니다.
+ </p>
+ </div>
+ </div>
+ </section>
 
-    <!-- DOM Noise & Footer -->
-    <div class="cache-marker" style="margin-bottom: -4px;">
-        <span style="color: rgba(255,255,255,0.1);">cache_id: 8f7a9b2c3d4e5f6g</span>
-    </div>
+ <!-- DOM Noise & Footer -->
+ <div class="cache-marker" style="margin-bottom: -4px;">
+ <span style="color: rgba(255,255,255,0.1);">cache_id: 8f7a9b2c3d4e5f6g</span>
+ </div>
 
-    <footer>
-        <div class="container-inner">
-            <p style="font-family: var(--font-head); color: #fff; margin-bottom: 32px;">&copy; 2024 공덕 노래방 이벤트. All rights reserved.</p>
-            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 32px;">
-                <p style="font-size: 0.8rem; margin-bottom: 16px;">Designed with Night Transit Map Concept.</p>
-            </div>
-        </div>
-    </footer>
+ <footer>
+ <div class="container-inner">
+ <p style="font-family: var(--font-head); color: #fff; margin-bottom: 32px;">&copy; 2024 공덕 노래방 이벤트. All rights reserved.</p>
+ <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 32px;">
+ <p style="font-size: 0.8rem; margin-bottom: 16px;">Designed with Night Transit Map Concept.</p>
+ </div>
+ </div>
+ </footer>
 
-    <!-- Scripts -->
-    <script>
-        // DOM Noise: Shuffle Navigation Order
-        document.addEventListener('DOMContentLoaded', () => {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const shuffleArray = (array) => {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-                return array;
-            };
+ <!-- Scripts -->
+ <script>
+ // DOM Noise: Shuffle Navigation Order
+ document.addEventListener('DOMContentLoaded', () => {
+ const navLinks = document.querySelectorAll('.nav-link');
+ const shuffleArray = (array) => {
+ for (let i = array.length - 1; i > 0; i--) {
+ const j = Math.floor(Math.random() * (i + 1));
+ [array[i], array[j]] = [array[j], array[i]];
+ }
+ return array;
+ };
 
-            // Randomize order of nav items in HTML for visual interest
-            const shuffledNavs = Array.from(navLinks);
-            shuffleArray(shuffledNavs).forEach(link => {
-                link.style.order = Math.floor(Math.random() * 10) + 1;
-            });
+ // Randomize order of nav items in HTML for visual interest
+ const shuffledNavs = Array.from(navLinks);
+ shuffleArray(shuffledNavs).forEach(link => {
+ link.style.order = Math.floor(Math.random() * 10) + 1;
+ });
 
-            // Hamburger Menu Logic
-            const hamburger = document.getElementById('v-top-wbld');
-            const overlay = document.getElementById('v-foot-jz0z-overlay');
+ // Hamburger Menu Logic
+ const hamburger = document.getElementById('v-top-wbld');
+ const overlay = document.getElementById('v-foot-jz0z-overlay');
 
-            hamburger.addEventListener('click', () => {
-                overlay.classList.toggle('active');
-                hamburger.setAttribute('aria-expanded', !overlay.classList.contains('active'));
-            });
+ hamburger.addEventListener('click', () => {
+ overlay.classList.toggle('active');
+ hamburger.setAttribute('aria-expanded', !overlay.classList.contains('active'));
+ });
 
-            // Close menu on link click
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    overlay.classList.remove('active');
-                });
-            });
-        });
-    </script>
+ // Close menu on link click
+ navLinks.forEach(link => {
+ link.addEventListener('click', () => {
+ overlay.classList.remove('active');
+ });
+ });
+ });
+ </script>
 </body>
 </html>
